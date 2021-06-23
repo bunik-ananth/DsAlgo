@@ -2,6 +2,7 @@ package stack;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class StackUsingArrayList {
 
@@ -44,6 +45,8 @@ public class StackUsingArrayList {
 		System.out.println(stack.size());
 		System.out.println(stack.peek());
 		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.isEmpty());
 		System.out.println(stack.size());
 		System.out.println(stack.peek());
 	}

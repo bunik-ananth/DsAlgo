@@ -16,8 +16,7 @@ public class StackImpUsingArray {
 		if(isFull()) {
 			throw new RuntimeException("Full");
 		}
-		array[++top] = item;
-		
+		array[++top] = item;//0th index value
 	}
 	
 	public int pop() {
