@@ -6,7 +6,7 @@ import java.util.Stack;
 public class PalindromeUsingStack {
 
 	public static void main(String[] args) {
-		isPalindrome("ABA");
+		isPalindrome("ABABA");
 	}
 	
 	public static void isPalindrome(String str) {
@@ -15,11 +15,12 @@ public class PalindromeUsingStack {
 			stack.push(str.charAt(i));
 		}
 		
-		String reverse="";
+		StringBuilder sb = new StringBuilder();
 		while(!stack.isEmpty()) {
-			reverse += stack.pop();
+//			reverse += stack.pop();
+			sb.append(stack.pop());
 		}
-		if(str.equals(reverse)) {
+		if(str.equals(sb.toString())) {
 			System.out.println(str+" is  Palindrome");
 		}
 		else {
