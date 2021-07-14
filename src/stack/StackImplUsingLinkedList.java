@@ -12,7 +12,6 @@ public class StackImplUsingLinkedList {
 		private Node next;
 		Node(int data){
 			this.data = data;
-			this.next = null;
 		}
 	}
 	
@@ -32,7 +31,7 @@ public class StackImplUsingLinkedList {
 		size--;
 		return result;
 	}
-	
+
 	public int peek() {
 		if(isEmpty()) {
 			throw new EmptyStackException();
@@ -45,10 +44,11 @@ public class StackImplUsingLinkedList {
 	}
 	
 	public int size() {
-		return size;
+		return size;	
 	}
 	
 	public static void main(String[] args) {
+		
 		StackImplUsingLinkedList stack = new StackImplUsingLinkedList();
 		System.out.println(stack.size());
 		stack.push(10);

@@ -1,0 +1,4 @@
+How to identify the Stack Problems
+1. Most of the stack questions are having an array
+2. Bruteforce type questions(o(n)^2)--->for inside for
+3. Second for loop(j), if j loop is depend on the i loop 100% we can get improvization in stack

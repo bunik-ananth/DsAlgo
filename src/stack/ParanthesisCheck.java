@@ -30,7 +30,6 @@ public class ParanthesisCheck {
 	}
 	
 	public static boolean check(String str) {
-		str = str.replaceAll("[^\\{\\}\\[\\]\\(\\)]", "");//regex just to remove paranthesis
 		while(str.contains("()") || str.contains("[]") || str.contains("{}")){
 			str = str.replaceAll("\\(\\)", "").replaceAll("\\[\\]", "").replaceAll("\\{\\}", "");
 		}
