@@ -2,7 +2,6 @@ package stack;
 
 import java.util.Stack;
 
-
 public class PalindromeUsingStack {
 
 	public static void main(String[] args) {
@@ -27,6 +26,4 @@ public class PalindromeUsingStack {
 			System.out.println(str+" is not Palindrome");
 		}
 	}
-	
-
 }
